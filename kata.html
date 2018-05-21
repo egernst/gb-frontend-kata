@@ -1,14 +1,44 @@
 <html ng-app="redis">
-  <head>
+<head>
+
     <title>Guestbook - with Kata Containers</title>
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.min.js"></script>
     <script src="controllers.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.13.0/ui-bootstrap-tpls.js"></script>
-  </head>
-  <body ng-controller="RedisCtrl">
-    <div style="width: 50%; margin-left: 20px">
-      <h2>Guestbook - with Kata Containers!!!</h2>
+
+<style>
+body {
+    background-color: deeppink;
+}
+.katafont {
+	font: 60px arial;
+	color: #F0F8FF;
+	text-align: center;
+}
+.gif{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+
+</style>
+</head>
+<body ng-controller="RedisCtrl"> 
+<div class = gif>
+<p>
+<div style="width:100%;height:0;padding-bottom:55%;position:relative;"><iframe src="https://giphy.com/embed/7LO7q5KcXawaQ" width="100%" height="90%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+</p>
+</div>
+
+<h1 class = katafont>KATA CONTAINERS</h1>
+
+</div>
+
+<div style="width: 50%; margin-left: 20px">
+      <h2>Guestbook</h2>
     <form>
     <fieldset>
     <input ng-model="msg" placeholder="Messages" class="form-control" type="text" name="input"><br>
@@ -20,11 +50,8 @@
         {{msg}}
       </div>
     </div>
-    <div class = gif>
-    <p>
-    <div style="width:75%;height:0;padding-bottom:55%;position:relative;"><iframe src="https://giphy.com/embed/7LO7q5KcXawaQ" width="100%" height="90%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
-    </p>
     </div>
-    </div>
-  </body>
+
+
+</body>
 </html>
